@@ -15,6 +15,10 @@ def main():
 	print("Sheet Names:")
 	filename = str(datetime.datetime.now().year) + ".xlsx"
 	print(worksheetManager.get_sheet_names(filename))
+
+	while True:
+		code = raw_input('Enter your input:')
+		worksheetManager.write_attendance(code)
 	
 if __name__ == "__main__":
 	main()
