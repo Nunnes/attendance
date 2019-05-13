@@ -1,7 +1,6 @@
 import rfid_reader
 import worksheetManager
 
-import openpyxl
 import datetime
 
 def main():
@@ -17,7 +16,7 @@ def main():
 	print(worksheetManager.get_sheet_names(filename))
 
 	while True:
-		code = raw_input('Enter your input:')
+		code = input('Enter your input:')
 		worksheetManager.write_attendance(code)
 	
 if __name__ == "__main__":
