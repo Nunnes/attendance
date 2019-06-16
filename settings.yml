@@ -1,0 +1,3 @@
+rfid: 
+  vendor:   0x08ff
+  product:  0x0009
